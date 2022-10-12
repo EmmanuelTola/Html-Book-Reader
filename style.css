@@ -180,6 +180,10 @@ color: white;
   margin-left: -20px;
   font-size: 18px;
   }
+
+ #homePage li{
+ display: none;
+ }
  
  #homePage h2{
  
