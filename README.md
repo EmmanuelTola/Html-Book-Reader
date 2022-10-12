@@ -1,6 +1,6 @@
 # Html-Book-Reader
 <h1>Description</h1>
-This plugin executes html book files created by the Novelist resource. 
+This plugin executes html book files created with the Novelist resource or conversion of epub file to html
 <p><a target="_blank" href="https://beta.novelist.app">See Novelist Website</a>
 <p><a target="_blank" href="https://play.google.com/store/apps/details?id=it.returntrue.novelist">See Novelist App</a>
 <p>The plugin executes the html book file in a <b><i>versatile, customizable and smooth</b></i> reading environment. It works just like an epub reader but with an html file.
