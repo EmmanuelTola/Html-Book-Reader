@@ -1,0 +1,214 @@
+ 	#popups {
+	 border: #ffcff1 2px solid;
+		display: none;
+		position: fixed;
+		top: 49vh;
+		left: 50%;
+		background: #fff;
+		width: 100%;
+		height: 300px;
+		margin-left: -50%; /*Half the value of width to center div*/
+		margin-top: -0px; /*Half the value of height to center div*/
+		z-index: 200;
+		overflow-y: hidden;
+		white-space: nowrap;
+	}
+
+	#popupcloses {
+		float: right;
+		padding: 10px;
+		cursor: pointer;
+	}
+
+	.popupcontents {
+		padding: 10px;
+		overflow-y: hidden;
+		white-space: nowrap;
+	}
+
+	#font {
+		cursor: pointer;
+		border: none;
+	}   
+
+	#popup {
+	 border: #ffcff1 2px solid;
+		display: none;
+		position: fixed;
+		top: 86vh;
+		left: 50%;
+		background: #fff;
+		width: 100%;
+		height: 45px;
+		margin-left: -50%; /*Half the value of width to center div*/
+		margin-top: -0px; /*Half the value of height to center div*/
+		z-index: 200;
+		overflow-y: hidden;
+		white-space: nowrap;
+	}
+
+	#popupclose {
+		float: right;
+		padding: 10px;
+		cursor: pointer;
+	}
+
+	.popupcontent {
+		padding: 10px;
+		overflow-y: hidden;
+		white-space: nowrap;
+	}
+
+	#size {
+		cursor: pointer;
+		border: none;
+	} 
+	
+ #body {
+ background-color: white;
+ color: black;
+ }   
+  
+            .tab {
+  overflow: scroll;
+  float: left;
+  clear: both;
+  border-top: rgba(255,255,255, 0.1) solid;
+  bottom: 0;
+  position: fixed;
+  background-color: #1D1D27;
+  width: 100vw;
+  margin-left: -9vw;
+  white-space: nowrap;
+  
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: #1D1D27;
+  color: #ffcff1;
+  width: auto;
+ border: none;
+ font-size: 80%;
+  overflow: scroll;
+  bottom: 0;
+  text-align: center;
+  margin-right: 13%;
+ 
+  display: inline-block;
+  
+}
+
+.tab button p{
+font-size: 70%;
+margin-bottom: -1%;
+}
+.tab button.active {
+  color: #FC4484;
+  font-size: 85%;
+}
+
+.tabcontent {
+  display: none;
+  padding: 0px;
+  border: none;
+  border-top: none;
+  margin-bottom: 15%;
+} 
+
+    .tot a{
+    text-decoration: none;
+    color: white;
+    }
+    
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+   color: white;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-bottom: 30vh;
+      
+}
+
+#sideNav {
+display:flex;
+    flex-direction: column-reverse;
+    }
+.sidenav a{
+  width: 100%;
+ margin-left: 7%;
+  text-decoration: none;
+ font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav li{
+flex-direction: column-reverse;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav button{
+background:none;
+border:none;
+color: white;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+ 
+  }
+       
+#homePage a{
+  text-decoration:none;
+  color: black;
+  display:none;
+  overflow: hidden;
+  margin-left: -20px;
+  font-size: 18px;
+  }
+ 
+ #homePage h2{
+ 
+ position: sticky;
+ top: 0;
+ margin-top: -1%; 
+ font-family: fantasy;
+ font-size: 20px;
+   background: #1D1D27;
+ width: 100vw;
+ color: #ffcff1;
+ margin-left: -10.8%;
+  }
+ 
+ #homePage {
+ margin-top: -210px;
+ 
+ 
+ }
+ 
+ #homePage p{
+ margin: 0;
+font-size: 15px;
+line-height: 25px;
+ } 
+ 
+  -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
