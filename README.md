@@ -29,6 +29,7 @@ This plugin executes html book files created by the Novelist resource.
 <li>In <b>index.html, line 107</b>, enter url of html file in <i>*fetch('')*</i>
 <li>In <b>script.js, line 11</b> replace <b>"num"</b> in <b>node[num]</b> with total number of book chapters minus 1</li>
 <li> embed code on a page to output the html reader</li>
+<li><b style="color: red;">Note: The Javascript in the html file should not be separated for proper functioning</b>
 
 <h3> User Customization</h3>
 <p> To allow users enter their own html url for reading, change <b>script.js, line 107</b> to **fetch(prompt('Enter Url', ''))**. You can also allow input of file from device. </p>
