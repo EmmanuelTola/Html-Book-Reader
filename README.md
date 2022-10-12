@@ -1,8 +1,8 @@
 # Html-Book-Reader
 <h1>Description</h1>
 This plugin executes html book files created by the Novelist resource. 
-<p><a href="https://beta.novelist.app">See Novelist Website</a>
-<p><a href="https://play.google.com/store/apps/details?id=it.returntrue.novelist">See Novelist App</a>
+<p><a target="_blank" href="https://beta.novelist.app">See Novelist Website</a>
+<p><a target="_blank" href="https://play.google.com/store/apps/details?id=it.returntrue.novelist">See Novelist App</a>
 <p>The plugin executes the html book file in a <b><i>versatile, customizable and smooth</b></i> reading environment. It works just like an epub reader but with an html file.
 
 <h1>Features</h1>
@@ -33,5 +33,5 @@ This plugin executes html book files created by the Novelist resource.
 <h3> User Customization</h3>
 <p> To allow users enter their own html url for reading, change <b>script.js, line 107</b> to **fetch(prompt('Enter Url', ''))**. You can also allow input of file from device. </p>
 <h1>Contributors</h1>
-<p><a href="https://etechdeveloper.com">E-Tech Developers</a>
+<p><a target="_blank" href="https://etechdeveloper.com">E-Tech Developers</a>
 <b>© 2022</b>
