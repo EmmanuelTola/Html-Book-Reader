@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+	    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+ $(document).ready(function () {
+
+if (localStorage.getItem("body") != null) {
+        $(window).scrollTop(localStorage.getItem("body"));
+    }
+
+    $(window).on("scroll", function() {
+        localStorage.setItem("body", $(window).scrollTop());
+    });
+
+  });
+if('scrollRestoration' in history){
+history.scrollRestoration='auto'
+}
+</script>	    
+</head>
+ <link rel="stylesheet" href="style.css"></link>
+ <script src="script.js"></script>
+	<body style="position:relative" id="body" onmousedown='return false;' onselectstart='return false;'>    
+		<button id="btn" style="display:none;" onclick="loadHTML()">
+            Click to load content from here
+        </button>
+
+<div class="tab">
+   
+     <button onclick="openNav();" style="margin-left: 10%;" class="tablinks"><i class="fa-solid fa-bars fa-2x"></i><p>List</button></a> 
+    
+  <button id="font" class="tablinks"><i class="fa-solid fa-font fa-2x"></i><p>Fonts</button>
+  
+  <button id="size" id="defaultOpen"><i class="fa-solid fa-plus fa-2x"></i></i><p>Size</button>
+  
+ <button class="tablinks" onclick="javascript:document.getElementById('moon').style.display='none'; javascript:document.getElementById('sun').style.display='inline-block'; javascript:document.getElementById('body').style.background='#1D1D27'; javascript:document.getElementById('body').style.color='white';" id="moon"><i class="fa-solid fa-moon fa-2x"></i><p>Dark</button>
+ 
+
+  <button style="display:none;" class="tablinks" onclick="javascript:document.getElementById('sun').style.display='none'; javascript:document.getElementById('moon').style.display='inline-block'; javascript:document.getElementById('body').style.background='white'; javascript:document.getElementById('body').style.color='black';" id="sun"><i class="fas fa-sun fa-2x"></i><p>Light</button>
+
+  </div></div>
+  
+  
+        <div class="tot">
+             <div id="mySidenav" class="sidenav">
+  <in style="font-size: 90px; position: sticky; color:white; bottom: 0; margin-left: 70%; padding-top: 30%;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</in>
+     <div id="sideNav">
+         
+         
+     </div>   
+          </div>    
+	<div id="overlay"></div>
+<div id="popup">
+    <div class="popupcontrols">
+        <span style="color:black;" id="popupclose">X</span>
+    </div>
+    <div class="popupcontent">
+        <in onclick="changeSizeByBtn(20);" style="background: #1D1D27; padding: 15px 15px; border-radius: 10px; font-size: 20px; color: white; margin-right: 6%;">1</in>
+        
+        <in onclick="changeSizeByBtn(30);" style="background: #1D1D27; padding: 15px 15px; border-radius: 10px; font-size: 20px; color: white; margin-right: 6%;">2</in>
+        
+        <in onclick="changeSizeByBtn(40);" style="background: #1D1D27; padding: 15px 15px; border-radius: 10px; font-size: 20px; color: white; margin-right: 6%;">3</in>
+
+<in onclick="changeSizeByBtn(50);" style="background: #1D1D27; padding: 15px 15px; border-radius: 10px; font-size: 20px; color: white; margin-right: 6%;">4</in>
+
+<in onclick="changeSizeByBtn(60);" style="background: #1D1D27; padding: 15px 15px; border-radius: 10px; font-size: 20px; color: white; margin-right: 1%;">5</in>      
+        </div></div>
+        
+          </div>    
+	<div id="overlays"></div>
+<div id="popups">
+    <div class="popupcontrols">
+        <span style="color:black;" id="popupcloses">X</span>
+    </div>
+    <div class="popupcontents">
+        <p onclick="document.getElementById('homePage').style.fontFamily='cursive';" style="font-family: cursive; font-size: 25px; color:black; margin-top: -10px; font-weight: bold;">Cursive</p>
+          <p onclick="document.getElementById('homePage').style.fontFamily='fantasy';" style="font-family: fantasy; font-size: 25px; color:black; margin-top: -10px; font-weight: bold;">Fantasy</p>
+          
+           <p onclick="document.getElementById('homePage').style.fontFamily= 'Serif';" style="font-family: Serif; font-size: 25px; color:black; margin-top: -10px; font-weight: bold;">Serif</p>
+        
+   <p onclick="document.getElementById('homePage').style.fontFamily='San-serif';" style="font-family: San-serif; font-size: 25px; color:black; margin-top: -10px; font-weight: bold;">Verdana</p>
+   
+      <p onclick="document.getElementById('homePage').style.fontFamily='monospace';" style="font-family: Monaco; font-size: 25px; color:black; margin-top: -10px; font-weight: bold;">Monaco</p>
+   
+     <p onclick="document.getElementById('homePage').style.fontFamily='courier';" style="font-family: courier; font-size: 25px; color:black; margin-top: -10px; font-weight: bold;">Courier</p> 
+     
+        
+      
+        </div></div>
+		<div class="homePage" id="homePage">
+	 		<p id="font" style="color:red;">The content from Home Page will be displayed here</p>
+	 	
+	 		</div>
+	 		
+		</div>
+		
+	</body>
+
+
+<script src="https://kit.fontawesome.com/e73524a371.js" crossorigin="anonymous"></script>
+
+<script>
+    //enter url of html file
+   function loadHTML(){
+  fetch('')
+  .then(response=> response.text())
+  .then(text=> document.getElementById('homePage').innerHTML = text);
+ }
+ 
+
+  var cont = document.getElementById("homePage");
+
+function changeSizeByBtn(size) {
+  // Set value of the parameter as fontSize
+  cont.style.fontSize = size + "px"; // <- HERE
+}
+
+function changeSizeBySlider() {
+  var slider = document.getElementById("slider");
+
+  // Set slider value as fontSize
+  cont.style.fontSize = slider.value + "px"; // <- HERE
+}
+	 
+	 	var closePopup = document.getElementById("popupclose");
+	var overlay = document.getElementById("overlay");
+	var popup = document.getElementById("popup");
+	var button = document.getElementById("size");
+	// Close Popup Event
+	closePopup.onclick = function() {
+	  overlay.style.display = 'none';
+	  popup.style.display = 'none';
+	};
+	// Show Overlay and Popup
+	button.onclick = function() {
+	  overlay.style.display = 'block';
+	  popup.style.display = 'block';
+	}   
+ 
+ 	var closePopups = document.getElementById("popupcloses");
+	var overlays = document.getElementById("overlays");
+	var popups = document.getElementById("popups");
+	var button = document.getElementById("font");
+	// Close Popup Event
+	closePopups.onclick = function() {
+	  overlays.style.display = 'none';
+	  popups.style.display = 'none';
+	};
+	// Show Overlay and Popup
+	button.onclick = function() {
+	  overlays.style.display = 'block';
+	  popups.style.display = 'block';
+	}
+ 
+  // Get the element with id="btn" and click on it
+document.getElementById("btn").click();
+</script>
