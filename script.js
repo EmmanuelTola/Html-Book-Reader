@@ -8,7 +8,7 @@
   var nodes = document.getElementsByTagName("li");
 
 for (var i = 0, len = nodes.length; i != len; ++i) {
-    document.getElementById ('sideNav').appendChild(nodes[75]);
+    document.getElementById ('sideNav').appendChild(nodes[num]);
     document.getElementById ('mySidenav').style.top = "-15%";
     
 }
